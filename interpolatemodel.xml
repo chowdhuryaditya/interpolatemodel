@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" ?>
+<casaxml xmlns="http://casa.nrao.edu/schema/psetTypes.html"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://casa.nrao.edu/schema/casa.xsd
+file:///opt/casa/code/xmlcasa/xml/casa.xsd">
+
+<task type="function" name="interpolatemodel" category="calibration" visibility="experimental">
+
+	<shortdescription>Task for interpolating model column from a frequency averaged measurement set to a higher resolution measurement set. </shortdescription>
+
+	<description>Task for interpolating model column from a frequency averaged measurement set to a higher resolution measurement set.</description>
+
+	<input>
+
+		<param type="string" name="visfrom" mustexist="true">
+			<description>Name of measurement set from which the model column is interpolated.</description>
+			<value></value>
+		</param>
+
+		<param type="string" name="visto" mustexist="true">
+			<description>Name of measurement set to which the interpolated model is written</description>
+			<value></value>
+		</param>
+
+		<param type="string" name="kind">
+			<description>Type of interpolation (Only linear allowed for now)</description>
+			<value>linear</value>
+		</param>
+		 
+    
+		 <constraints/>
+		
+				
+
+ </input>
+
+  <returns type="void"/>
+
+</task>
+
+</casaxml>
